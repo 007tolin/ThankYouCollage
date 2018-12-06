@@ -1,6 +1,7 @@
 PImage img;
 PImage handopen;
-Pimage handclosed;
+PImage handclosed;
+
 void setup() {
   size(600,600);
   img = loadImage ("izakaya.jpg");
