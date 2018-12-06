@@ -8,8 +8,6 @@ void setup() {
 }
 void draw() {
   background(255);
-  image(img,0,0);
-  image(img,0,0,width/1,height/1.5);
   if(mousePressed) {
     image(img,mouseX,mouseY);
   }else{
