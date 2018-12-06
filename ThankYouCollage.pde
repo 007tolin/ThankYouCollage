@@ -1,4 +1,5 @@
-PImage img;
+PImage izakaya;
+PImage thankyou;
 PImage handopen;
 PImage handclosed;
 
