@@ -6,8 +6,8 @@ void setup() {
   size(600,600);
   img = loadImage ("izakaya.jpg");
   img = loadImage ("thankyou.png");
-   img = loadImage ("hand closed.png");
-    img = loadImage ("hand open.png");
+   handclosed = loadImage ("hand closed.png");
+    handopen = loadImage ("hand open.png");
 }
 void draw() {
   background(255);
