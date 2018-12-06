@@ -1,19 +1,18 @@
 PImage img;
 void setup() {
   size(600,600);
-   img = loadImage ("izakaya.jpg");
-   img = loadImage ("thankyou.png");
-      img = loadImage ("hand closed.png");
-    img = loadImage ("hand open.png");
-  
 }
 void draw() {
   background(255);
+  img = loadImage ("izakaya.jpg");
   image(img,0,0);
+  img = loadImage ("thankyou.png");
   image(img,0,0,width/1,height/1.5);
   if(mousePressed) {
+  img = loadImage ("hand closed.png");
     image(img,mouseX,mouseY);
   }else{
+  img = loadImage ("hand open.png");
   image(img,mouseX,mouseY,width/2,height/2);
   }
   frameRate(60);
