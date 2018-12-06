@@ -1,4 +1,6 @@
 PImage img;
+PImage handopen;
+Pimage handclosed;
 void setup() {
   size(600,600);
   img = loadImage ("izakaya.jpg");
@@ -9,9 +11,9 @@ void setup() {
 void draw() {
   background(255);
   if(mousePressed) {
-    image(img,mouseX,mouseY);
+    image(handclosed,mouseX,mouseY);
   }else{
-  image(img,mouseX,mouseY,width/2,height/2);
+  image(handopen,mouseX,mouseY,width/2,height/2);
   }
   frameRate(60);
   noStroke();
