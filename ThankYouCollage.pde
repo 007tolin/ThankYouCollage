@@ -5,13 +5,15 @@ PImage handclosed;
 
 void setup() {
   size(600,600);
-  img = loadImage ("izakaya.jpg");
-  img = loadImage ("thankyou.png");
+  izakaya = loadImage ("izakaya.jpg");
+  thankyou = loadImage ("thankyou.png");
    handclosed = loadImage ("hand closed.png");
     handopen = loadImage ("hand open.png");
 }
 void draw() {
   background(255);
+  image(izakaya,0,0);
+  image(thankyou,width/1,height/1.5);
   if(mousePressed) {
     image(handclosed,mouseX,mouseY);
   }else{
